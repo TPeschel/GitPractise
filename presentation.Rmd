@@ -19,11 +19,10 @@ This is an R Markdown presentation. Markdown is a simple formatting syntax for a
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
 
-## Slide with Bullets
+## Slide with some topics
 
-- Bullet 1
-- Bullet 2
-- Bullet 3
+- Create some data
+- Show data
 
 ## Slide with R Output
 
@@ -39,17 +38,17 @@ data <- data.frame(
 )
 ```
 
-## Slide with Plot
+## Slide with Base-Plot
 
 ```{r plot_data}
 plot( data )
 ```
 
 
-## Slide2 with Plot
+## Slide with Plotly Plot
 
 ```{r plotly_3d_data,warning=FALSE}
 plot_ly( data ) %>%
-  add_markers( x = ~ x, y = ~ y, z = ~ z, type = "scatter3d", mode = "markers" )
+  add_markers( x = ~ x, y = ~ y, z = ~ z, color = ~sex, type = "scatter3d", mode = "markers", colors = c( "yellow", "blue" ) )
 ```
 
