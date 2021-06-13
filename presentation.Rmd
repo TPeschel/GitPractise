@@ -52,3 +52,9 @@ plot_ly( data ) %>%
   add_markers( x = ~ x, y = ~ y, z = ~ z, color = ~sex, type = "scatter3d", mode = "markers", colors = c( "red", "dodgerblue3" ) )
 ```
 
+## Simply an other Slide
+```{r another_slide,warning=FALSE}
+plot_ly( data ) %>%
+  add_markers( x = ~ x, y = ~ y, z = ~ z, color = ~sex, type = "scatter3d", mode = "markers", colors = c( "red", "dodgerblue3" ) )
+```
+
